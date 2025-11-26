@@ -48,6 +48,7 @@ export default function UserProfilePage() {
       fetchUser()
       fetchPosts()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [username])
 
   const fetchUser = async () => {

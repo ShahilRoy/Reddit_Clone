@@ -46,6 +46,7 @@ export default function PostDetailPage() {
     if (postId) {
       fetchPost()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [postId])
 
   const fetchPost = async () => {
@@ -188,6 +189,7 @@ export default function PostDetailPage() {
                   </div>
                 )}
                 {post.imageUrl && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
                   <img
                     src={post.imageUrl}
                     alt={post.title}

@@ -57,6 +57,7 @@ export default function CommunityPage() {
     if (communityName) {
       fetchCommunity()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [communityName])
 
   const fetchCommunity = async () => {

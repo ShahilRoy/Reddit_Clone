@@ -37,6 +37,7 @@ function CreatePostForm() {
       return
     }
     fetchCommunities()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session, router])
 
   const fetchCommunities = async () => {

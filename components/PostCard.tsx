@@ -135,6 +135,7 @@ export function PostCard({ post }: PostCardProps) {
               </p>
             )}
             {post.imageUrl && (
+              /* eslint-disable-next-line @next/next/no-img-element */
               <img
                 src={post.imageUrl}
                 alt={post.title}

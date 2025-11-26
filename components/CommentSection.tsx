@@ -38,6 +38,7 @@ export function CommentSection({ postId }: CommentSectionProps) {
 
   useEffect(() => {
     fetchComments()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [postId])
 
   const fetchComments = async () => {
